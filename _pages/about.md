@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "AI Research Engineer | Computer Vision & Machine Learning"
+title: 
 author_profile: true
 redirect_from: 
   - /about/
