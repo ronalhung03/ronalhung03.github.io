@@ -1,15 +1,28 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "AI Research Engineer | Computer Vision & Machine Learning"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+Welcome to my academic website! I am a fresh graduate in Artificial Intelligence Engineering from the Posts and Telecommunications Institute of Technology (PTIT) with a strong passion for developing practical AI solutions. My research interests focus on **computer vision for agriculture and medical imaging**, **nature-inspired optimization algorithms**, and **efficient deep learning models for resource-constrained devices**.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## Research Focus
+
+My work centers on applying computer vision and machine learning to solve real-world problems:
+- **Agricultural AI**: Developing lightweight mobile applications for crop disease detection and monitoring
+- **Optimization**: Implementing nature-inspired algorithms like Particle Swarm Optimization for improved model performance
+- **Edge Computing**: Creating efficient TensorFlow Lite models for on-device inference on mobile and IoT devices
+
+## Recent Projects
+
+I have successfully developed and deployed two AI-based mobile systems:
+- **Durian Leaf Disease Classification** (Graduation Thesis) - An Android application with 90%+ accuracy for real-time disease prediction
+- **Tomato Disease Detection System** - A mobile monitoring system published at the International Conference on Real-time Intelligent Systems (RTIS 2025)
+
+Explore my [publications](/publications/), [research experience](/experience/), and [CV](/cv/) to learn more about my work.
 
 A data-driven personal website
 ======

@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Tran Nguyen Phi Hung"
 title_separator          : "-"
 name                     : &name "Tran Nguyen Phi Hung"
-description              : &description "I am a fresh graduate with the motivation to become an AI research engineer, transforming abstract paper knowledge into real-world solutions backed with AI."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "AI Engineering graduate specializing in computer vision for agriculture and medical imaging, with expertise in efficient deep learning models for edge devices."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ronalhung03.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,8 +26,8 @@ author:
   avatar           : "profile.jpg"
   name             : "Tran Nguyen Phi Hung"
   pronouns         : # example: "she/her"  
-  bio              : "I am a fresh graduate with the motivation to become an AI research engineer, transforming abstract paper knowledge into real-world solutions backed with AI."
-  location         : "Ho Chi Minh City, VietNam"
+  bio              : "AI Engineering graduate specializing in computer vision, machine learning, and efficient deep learning models for edge devices."
+  location         : "Ho Chi Minh City, Vietnam"
   employer         : "PTIT"
   uri              : # URL
   email            : "phtrannguyen2003@gmail.com" 
@@ -52,7 +52,7 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "ronalhung03"
-  kaggle           : # Username  
+  kaggle           : "phihngtrnnguyn"  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media

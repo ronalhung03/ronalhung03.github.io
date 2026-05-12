@@ -11,35 +11,31 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Eng. in Artificial Intelligence, Posts and Telecommunications Institute of Technology (PTIT), Ho Chi Minh City, Vietnam (Aug 2021 – July 2026)
+  * Cumulative GPA: 3.4/4.0
+  * Graduation Thesis: 9.7/10 (A+), highest-graded thesis in the Artificial Intelligence program
+  * Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Data Mining, Data Analytics, Linear Algebra, Probability and Statistics, Optimization
+  * IELTS 7.5 (Overall)
 
-Work experience
+Research Experience & Projects
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* AI-Based Mobile App for Durian Leaf Disease Classification (Sep 2025 – Dec 2025)
+  * Individual Graduation Thesis Project
+  * Designed and trained lightweight CNN models for real-world durian leaf disease classification
+  * Developed Android application with 90%+ accuracy for on-device inference
+  * Code: github.com/ronalhung05/Durian
   
+* AI-Based Mobile System for Tomato Leaf Disease Detection and Monitoring (Jun 2025 – Aug 2025)
+  * Project Lead (2 members, Score: 9.8/10, A+)
+  * Published as full paper at RTIS 2025 conference
+  * Notebook: kaggle.com/code/phihngtrnnguyn/tomato-leaf-classification-mobilenet
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: Python (primary), Java, C++, C, SQL
+* ML & DL Frameworks: TensorFlow / TensorFlow Lite, PyTorch, Scikit-learn, OpenCV
+* Tools: Jupyter Notebook, Google Colab, PyCharm, VS Code, Git, GitHub, Kaggle
+* AI & Mathematics: Convolutional Neural Networks, Machine Learning, Deep Learning, Optimization, Evolutionary Algorithms, Data Analytics, Linear Algebra, Probability and Statistics, Large Language Models
 
 Publications
 ======
@@ -47,18 +43,18 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+Experience
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Scholarships, Awards & Certifications
 ======
-* Currently signed in to 43 different slack teams
+* Academic Scholarship for Outstanding Performance, PTIT (4 consecutive years, 2021–2025)
+* Highest-graded Graduation Thesis in the AI program (score 9.7/10, A+)
+* Building AI Agents and Agentic Workflows – IBM / Coursera (Feb 2026)
+* Build, Train and Deploy ML Models with Keras on Google Cloud – Google Cloud / Coursera (Jan 2026)
+* Machine Learning in Production – DeepLearning.AI / Coursera (Jun 2025)
+* Deep Learning Specialization – DeepLearning.AI / Coursera (Apr 2025)
+* Google Advanced Data Analytics Professional Certificate – Google / Coursera (Mar 2025)
