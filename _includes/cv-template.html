@@ -26,7 +26,7 @@
     <div class="cv-contact">
       {% if cv.basics.email %}
       <div class="cv-contact-item">
-        <i class="fas fa-envelope"></i> {{ cv.basics.email }}
+        <i class="fas fa-envelope"></i> <a href="mailto:{{ cv.basics.email }}">{{ cv.basics.email }}</a>
       </div>
       {% endif %}
       

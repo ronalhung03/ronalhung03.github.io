@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<p><em><a href="https://drive.google.com/drive/u/1/folders/1jtzFKnC93ph_xqg0jHj-sNVzDSo-jIHS" target="_blank" rel="noopener">All documents about myself</a></em></p>
+
 Education
 ------
 * B.Eng. in Artificial Intelligence, Posts and Telecommunications Institute of Technology (PTIT), Ho Chi Minh City, Vietnam (Aug 2021 – July 2026)
