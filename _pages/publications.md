@@ -14,10 +14,12 @@ redirect_from:
 <ul>
 {% assign journals = site.publications | where: "category", "journals" | sort: "date" | reverse %}
 {% for pub in journals %}
+  {% if pub.citation %}
   <li>
     {{ pub.citation }}
     {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[doi]</a>{% endif %}
   </li>
+  {% endif %}
 {% endfor %}
 </ul>
 
@@ -26,8 +28,10 @@ redirect_from:
 <ul>
 {% assign confs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
 {% for pub in confs %}
+  {% if pub.citation %}
   <li>
     {{ pub.citation }}
   </li>
+  {% endif %}
 {% endfor %}
 </ul>
