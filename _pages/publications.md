@@ -17,6 +17,7 @@ redirect_from:
   {% if pub.citation %}
   <li>
     {{ pub.citation }}
+    {% if pub.paperurl %} <a href="{{ pub.paperurl }}">[pdf]</a>{% endif %}
     {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[doi]</a>{% endif %}
   </li>
   {% endif %}
@@ -31,6 +32,8 @@ redirect_from:
   {% if pub.citation %}
   <li>
     {{ pub.citation }}
+    {% if pub.paperurl %} <a href="{{ pub.paperurl }}">[pdf]</a>{% endif %}
+    {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[doi]</a>{% endif %}
   </li>
   {% endif %}
 {% endfor %}
