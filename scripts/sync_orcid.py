@@ -1,5 +1,6 @@
-"""Discover ORCID works and prepare reviewable Jekyll publication drafts."""
+"""Publish new public ORCID works as Jekyll research items."""
 import json
+import hashlib
 import re
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -20,7 +21,7 @@ def text(field):
 
 
 def existing_dois():
-    return set(re.findall(r"(?im)^doi:\s*['\"]?([^\s'\"]+)", "\n".join(
+    return set(value.lower().rstrip("/.,") for value in re.findall(r"(?im)^doi:\s*['\"]?([^\s'\"]+)", "\n".join(
         p.read_text(encoding="utf-8") for p in PUBLICATIONS.glob("*.md")
     )))
 
@@ -33,13 +34,13 @@ def main():
         identifiers = (group.get("external-ids") or {}).get("external-id") or []
         doi = next(((item.get("external-id-value") or "") for item in identifiers
                     if item.get("external-id-type", "").lower() == "doi"), "")
-        if not doi or doi in known:
+        if not doi or doi.lower().rstrip("/.,") in known:
             continue
         summary = (group.get("work-summary") or [{}])[0]
         title = text((summary.get("title") or {}).get("title"))
         if not title:
             continue
-        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:70]
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:55] + "-" + hashlib.sha1(doi.lower().encode()).hexdigest()[:8]
         path = PUBLICATIONS / f"orcid-{slug}.md"
         if path.exists():
             continue
@@ -48,15 +49,15 @@ def main():
         kind = "conferences" if "conference" in (summary.get("publication-type") or "").lower() else "journals"
         metadata = {"title": title, "collection": "publications", "category": kind,
                     "permalink": f"/publication/{slug}/", "venue": journal,
-                    "doi": doi, "orcid": ORCID, "published": False}
+                    "doi": doi, "orcid": ORCID, "published": True}
         if year.isdigit():
             metadata["year"] = int(year)
-        # JSON strings are valid YAML scalars. A draft remains hidden until reviewed.
-        body = "---\n" + "".join(f"{key}: {json.dumps(value, ensure_ascii=False)}\n" for key, value in metadata.items()) + "---\n\nPublication details from ORCID. Review authors, venue, type and status before setting `published: true`.\n"
+        # JSON strings are valid YAML scalars.
+        body = "---\n" + "".join(f"{key}: {json.dumps(value, ensure_ascii=False)}\n" for key, value in metadata.items()) + "---\n\nPublication metadata automatically imported from the public ORCID record.\n"
         path.write_text(body, encoding="utf-8")
         created.append(path.name)
-        known.add(doi)
-    print(f"Created {len(created)} review drafts: {', '.join(created)}")
+        known.add(doi.lower().rstrip("/. ,"))
+    print(f"Published {len(created)} new research items: {', '.join(created)}")
 
 
 if __name__ == "__main__":
