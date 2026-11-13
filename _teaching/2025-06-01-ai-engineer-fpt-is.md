@@ -1,14 +1,17 @@
 ---
-title: "AI Engineer — FPT IS"
+title: "AI Engineer Intern — FPT IS"
 collection: teaching
 type: "Internship"
 permalink: /teaching/2025-06-01-ai-engineer-fpt-is
-venue: "FPT IS"
+venue: "FPT Information System"
 date: 2025-06-01
-location: "Ho Chi Minh City Metropolitan Area (Hybrid)"
+period: "June 2025 – August 2025"
+location: "Ho Chi Minh City, Vietnam"
+excerpt: "Participated in designing a RAG architecture for Vietnamese legal question answering, including document preprocessing, retrieval, and LLM integration."
 ---
 
-- Assisted in building a Retrieval-Augmented Generation (RAG) system for extracting legal information from complex documents (chatbot).
-- Supported consulting efforts on AI-driven solutions tailored to business needs, collaborating with cross-functional teams to deliver an integrated end-to-end e-commerce system.
+- Participated in designing a RAG architecture for Vietnamese legal question answering, including document preprocessing, retrieval, and LLM integration.
 
-**Skills:** Retrieval-Augmented Generation (RAG), NLP, System Integration
+- Built a preprocessing pipeline for Vietnamese legal text files to support retrieval quality and answer relevance.
+
+- Developed a FastAPI service exposing the RAG pipeline through REST APIs for application integration and internal demos.

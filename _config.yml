@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Tran Nguyen Phi Hung"
 title_separator          : "-"
 name                     : &name "Tran Nguyen Phi Hung"
-description              : &description "AI Engineering graduate specializing in computer vision for agriculture and medical imaging, with expertise in efficient deep learning models for edge devices."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "AI Engineer and Data Scientist working on agricultural computer vision, efficient mobile models, and applied machine learning."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ronalhung03.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,9 +26,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Tran Nguyen Phi Hung"
   pronouns         : # example: "she/her"  
-  bio              : "I am a fresh graduate with the motivation to become an AI research engineer, transforming abstract paper knowledge into real-world solutions for health and agriculture aspects."
+  bio              : "AI Engineer & Data Scientist interested in agricultural computer vision, robust field evaluation, and efficient deployment."
   location         : "Ho Chi Minh City, Vietnam"
-  employer         : "PTIT"
+  employer         :
   uri              : # URL
   email            : "phtrannguyen2003@gmail.com" 
 
