@@ -1,4 +1,7 @@
 ---
+authors: "Tran Nguyen Phi Hung, et al."
+summary: "Transfer learning and particle swarm optimization for durian leaf disease classification."
+codeurl: "https://github.com/ronalhung03/Durian"
 title: "Transfer Learning with Particle Swarm Optimization for Durian Leaf Disease Image Classification"
 collection: publications
 category: journals

@@ -1,4 +1,6 @@
 ---
+authors: "Tran Nguyen Phi Hung, et al."
+summary: "A mobile tomato disease detection and monitoring system with efficient inference."
 title: "AI-Based Mobile System for Tomato Disease Detection and Monitoring"
 collection: publications
 category: conferences

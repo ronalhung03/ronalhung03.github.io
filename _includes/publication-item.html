@@ -1,0 +1,12 @@
+<article class="publication-item">
+  <h3><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+  {% if pub.authors %}<p>{{ pub.authors }}</p>{% endif %}
+  <p><em>{{ pub.venue }}</em>{% if pub.status == "accepted" %} · Accepted for publication{% elsif pub.year %} · {{ pub.year }}{% elsif pub.date %} · {{ pub.date | date: "%Y" }}{% endif %}</p>
+  {% if pub.summary %}<p>{{ pub.summary }}</p>{% endif %}
+  <p class="publication-item__links">
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI: {{ pub.doi }}</a>{% endif %}
+    {% if pub.paperurl %}<a href="{{ pub.paperurl | relative_url }}">PDF</a>{% endif %}
+    {% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}
+    {% if pub.quartile and pub.ranking_source and pub.ranking_year %}<span>{{ pub.ranking_source }} {{ pub.ranking_year }}: {{ pub.quartile }}</span>{% endif %}
+  </p>
+</article>

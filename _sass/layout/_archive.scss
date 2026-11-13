@@ -243,3 +243,8 @@
     }
   }
 }
+
+.publication-item { margin: 1.5em 0; padding: 0 0 1em; border-bottom: 1px solid #eee; }
+.publication-item h3 { margin-bottom: .3em; }
+.publication-item p { margin: .4em 0; }
+.publication-item__links { display: flex; flex-wrap: wrap; gap: .35em 1em; }

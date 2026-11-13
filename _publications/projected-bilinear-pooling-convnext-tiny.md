@@ -1,4 +1,6 @@
 ---
+authors: "Tran Nguyen Phi Hung, et al."
+summary: "A multi-seed benchmark of projected bilinear pooling for ConvNeXt-Tiny on durian leaf disease classification."
 title: "Projected Bilinear Pooling for ConvNeXt-Tiny: A Multi-Seed Benchmark for Durian Leaf Disease Classification"
 collection: publications
 category: journals

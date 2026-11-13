@@ -7,34 +7,23 @@ redirect_from:
   - /publications.html
 ---
 
-{% include base_path %}
+My research publications are listed below. [ORCID record](https://orcid.org/0009-0008-5977-498X).
 
-## Refereed Journal Articles
-
-<ul>
 {% assign journals = site.publications | where: "category", "journals" | sort: "date" | reverse %}
+{% assign conferences = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
+
+## Journal articles
+
 {% for pub in journals %}
-  {% if pub.citation %}
-  <li>
-    {{ pub.citation }}
-    {% if pub.paperurl %} <a href="{{ pub.paperurl }}">[pdf]</a>{% endif %}
-    {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[doi]</a>{% endif %}
-  </li>
-  {% endif %}
+{% unless pub.published == false %}
+{% include publication-item.html %}
+{% endunless %}
 {% endfor %}
-</ul>
 
-## Refereed International Conference Papers
+## Conference papers
 
-<ul>
-{% assign confs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
-{% for pub in confs %}
-  {% if pub.citation %}
-  <li>
-    {{ pub.citation }}
-    {% if pub.paperurl %} <a href="{{ pub.paperurl }}">[pdf]</a>{% endif %}
-    {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[doi]</a>{% endif %}
-  </li>
-  {% endif %}
+{% for pub in conferences %}
+{% unless pub.published == false %}
+{% include publication-item.html %}
+{% endunless %}
 {% endfor %}
-</ul>

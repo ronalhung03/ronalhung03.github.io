@@ -1,0 +1,26 @@
+name: Review ORCID publications
+on:
+  schedule:
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover ORCID works
+        run: python scripts/sync_orcid.py
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Add ORCID publication drafts for review"
+          branch: automation/orcid-publications
+          delete-branch: true
+          title: "Review new ORCID publication drafts"
+          body: "New ORCID works are added as unpublished drafts. Check authors, venue, publication type, date, DOI, and status before publishing."
+          add-paths: _publications/orcid-*.md
